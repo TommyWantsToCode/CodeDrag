@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<script type="text/javascript" src="./js/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="./CodeDrag/CodeDragCore.js"></script>
+	</head>
+	<body>
+		<script type="text/javascript">
+CodeDrag.load({
+  "title": "Default title",
+  "elements": {
+    "value": [
+      {
+        "plugin": "Barra",
+        "properties": {
+          "Hipervinculos": {
+            "type": "ElementList",
+            "parent": "Barra",
+            "name": "Hipervinculos",
+            "possibleChildren": [
+              "Hipervinculo"
+            ],
+            "value": [
+              {
+                "plugin": "Hipervinculo",
+                "properties": {
+                  "MiVinculo": {
+                    "type": "String",
+                    "name": "MiVinculo",
+                    "value": "http://facebook.com/tomas.garza.336"
+                  },
+                  "MiTexto": {
+                    "type": "String",
+                    "name": "MiTexto",
+                    "value": "Facebook"
+                  }
+                }
+              },
+              {
+                "plugin": "Hipervinculo",
+                "properties": {
+                  "MiVinculo": {
+                    "type": "String",
+                    "name": "MiVinculo",
+                    "value": "https://github.com/TommyWantsToCode"
+                  },
+                  "MiTexto": {
+                    "type": "String",
+                    "name": "MiTexto",
+                    "value": "Github"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "plugin": "BotonAlerta",
+        "properties": {
+          "Texto_Alerta": {
+            "type": "String",
+            "name": "Texto_Alerta",
+            "value": "tomas.arangua@hotmail.com"
+          },
+          "Texto_Boton": {
+            "type": "String",
+            "name": "Texto_Boton",
+            "value": "Ver email"
+          }
+        }
+      }
+    ]
+  }
+});
+		</script>
+	</body>
+</html>

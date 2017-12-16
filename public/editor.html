@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<script type="text/javascript" src="./js/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="./CodeDrag/CodeDragCore.js"></script>
+		<script type="text/javascript" src="./CodeDrag/CodeDragEditor.js"></script>
+		<link rel="stylesheet" type="text/css" href="./CodeDrag/CodeDragEditor.css" />
+		<title> CodeDrag Editor </title>
+	</head>
+	<body>
+		<div id="CodeDragEditor_Container">
+			<div id="CodeDragEditor_Imports">
+				<h1 class="EditorTitle"> Imports </h3>
+				<hr class="EditorSeparator" />
+				<div id="ImportForm">
+					<input type="text" id="import_text" placeholder="Plugin Name"/>
+					<input type="button" id="import_button" value="Import"/>
+				</div>
+				<hr class="EditorSeparator" />
+				<div id="Imports">
+					<h3 class="EditorNote">No imports</h3>
+				</div>
+			</div>
+			<div id="CodeDragEditor_Workspace">
+				<div id="CodeDragEditor_Buttons">
+					<button>New</button>
+					<button>Open</button>
+					<button>Save</button>
+					<button id="CodeDragEditor_Button_Code">Code</button>
+					<button id="CodeDragEditor_Button_Compile">Compile</button>
+				</div>
+				<div id="CodeDragEditor_Render">
+				</div>
+			</div>
+			<div id="CodeDragEditor_Properties">
+				<h1 class="EditorTitle"> Properties </h3>
+				<hr class="EditorSeparator" />
+				<div id="CodeDragEditor_Selected_Properties">
+					<h3 class="EditorNote"> No selection </h3>
+				</div>
+				
+			</div>
+		</div>
+	</body>
+</html>

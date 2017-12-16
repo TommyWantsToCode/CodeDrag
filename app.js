@@ -1,0 +1,9 @@
+var express = require('express');
+
+var app = express();
+
+
+app.use(express.static(__dirname+'/public'));
+app.listen(5050);
+
+console.log('Iniciado');
